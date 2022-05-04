@@ -27,6 +27,7 @@ public class T2_SimpleRequestWithPath {
       //  1. Send request to HR url and save the response
       //  2. GET /employees/150
       //  3. Store the response in Response Object that comes from get Request
+                                                                    //path /ords/hr/
         Response response = RestAssured.get("http://3.83.127.158:1000/ords/hr/employees/150");
 
         //  print response
