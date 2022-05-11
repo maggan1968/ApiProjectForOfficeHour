@@ -2,8 +2,10 @@ package com.cydeo.pojos.pojo;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import groovy.transform.builder.Builder;
 
-@JsonIgnoreProperties(value = "id",allowSetters = true)//including
+@JsonIgnoreProperties(ignoreUnknown = true, value = "id",allowSetters = true)//including
+@Builder
 public class Spartan {
 
     //to create pojo
